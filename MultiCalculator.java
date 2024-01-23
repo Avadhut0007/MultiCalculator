@@ -15,6 +15,7 @@ public class MultiCalculator {
             System.out.println("5. Loan Calculator");
             System.out.println("6. Exit");
 
+            System.out.println("Enter your choice");
             int choice = scanner.nextInt();
 
             switch (choice) {
