@@ -6,7 +6,7 @@ public class MultiCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        while (true) {
+        while (true) { // for options
             System.out.println("Select an option:");
             System.out.println("1. Simple Calculator");
             System.out.println("2. Currency Converter");
@@ -41,7 +41,7 @@ public class MultiCalculator {
             }
         }
     }
-
+//Simple calculator where you can add mul sub div of 2 numbers
     private static void simpleCalculator() {
         Scanner scanner = new Scanner(System.in);
 
@@ -82,7 +82,7 @@ public class MultiCalculator {
         System.out.println("Result: " + result);
         
     }
-
+// currency converter is convert indian rupees into usd,eur,gbp,jpy,cny,aud.
     private static void currencyConverter() {
         Scanner scanner = new Scanner(System.in);
 
@@ -102,22 +102,22 @@ public class MultiCalculator {
 
         switch (currencyChoice) {
             case 1:
-                exchangeRate = 0.012; 
+                exchangeRate = 0.012; //value of current united state dollar
                 break;
             case 2:
-                exchangeRate = 0.011; 
+                exchangeRate = 0.011; //value of current euro
                 break;
             case 3:
-                exchangeRate = 0.0095; 
+                exchangeRate = 0.0095; // value of british pound
                 break;
             case 4:
-                exchangeRate = 1.78; 
+                exchangeRate = 1.78; // value of japanese yen
                 break;
             case 5:
-                exchangeRate = 0.086; 
+                exchangeRate = 0.086; // value of Chinese Yuan
                 break;
             case 6:
-                exchangeRate = 0.018; 
+                exchangeRate = 0.018; //value of Australian Dollar
                 break;
             default:
                 System.out.println("Invalid currency choice. Please try again.");
@@ -130,7 +130,7 @@ public class MultiCalculator {
         
         
     }
-
+//unit converter 
     private static void unitConverter() {
         Scanner scanner = new Scanner(System.in);
 
@@ -182,7 +182,7 @@ public class MultiCalculator {
                 scanner.close();
         }
     }
-
+//  Body Mass Index (BMI) bmi calculator
     private static void bmiCalculator() {
         Scanner scanner = new Scanner(System.in);
 
@@ -197,7 +197,7 @@ public class MultiCalculator {
         System.out.println("Your BMI is: " + bmi);
         scanner.close();
     }
-
+// basic loan calculator
     private static void loanCalculator() {
         Scanner scanner = new Scanner(System.in);
 
